@@ -3,6 +3,20 @@ Example: Measure distance using Ultrasonic sensor and display results on LED mat
 By: Meqdad Darwish
 '''
 from microbit import *
+<<<<<<< HEAD
+from ultrasonic import Ultrasonic
+
+# default pins in Ultrasonic class are:
+# trigger: pin13
+# echo: pin15
+
+ultrasonic_sensor = Ultrasonic()
+# or
+# ultrasonic_sensor = Ultrasonic(trig=pin13, echo=pin15)
+
+while True:
+    distance_value = ultrasonic_sensor.measure_distance_cm()
+=======
 from machine import time_pulse_us
 
 TRIGGER = pin13
@@ -24,5 +38,6 @@ ECHO.read_digital()
 
 while True:
     distance_value = measure_distance()
+>>>>>>> db6551813e487b5a9dbf27f6126d0cbf0314043f
     display.scroll(str(int(distance_value)))
     sleep(2000)
