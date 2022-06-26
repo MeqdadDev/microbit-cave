@@ -2,10 +2,10 @@
 
 
 <picture>
-  <img alt="micro:bit Logo" src="Docs\microbit-logo.png" width="10%" hight="10%" >
+  <img alt="micro:bit Logo" src="Docs\microbit-logo.png" width="20%" hight="20%" >
 </picture>
 <picture>
-  <img alt="MicroPython Logo" src="Docs\micropython-logo.png" width="15%" hight="10%" >
+  <img alt="MicroPython Logo" src="Docs\micropython-logo.png" width="25%" hight="20%" >
 </picture>
 
 
