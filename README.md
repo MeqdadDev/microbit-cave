@@ -1,5 +1,14 @@
 # BBC micro:bit with MicroPython
 
+
+<picture>
+  <img alt="micro:bit Logo" src="Docs\microbit-logo.png" width="10%" hight="10%" >
+</picture>
+<picture>
+  <img alt="MicroPython Logo" src="Docs\micropython-logo.png" width="15%" hight="10%" >
+</picture>
+
+
 Projects, code examples and modules for BBC micro:bit with MicroPython.
 Upload projects are tested on BBC micro:bit v2.
 
@@ -14,10 +23,12 @@ Upload projects are tested on BBC micro:bit v2.
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/1%20display%20string.py">Display Text on LED Matrix</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/2%20display%20images.py">Display Built-in Images</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/3%20display%20DIY%20images.py">Display DIY Images</a></li>
+        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/4%20radio-sender.py">Radio Messaging: Sender</a></li>
+        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/5%20radio-receiver.py">Radio Messaging: Receiver</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Extenal Components with micro:bit v2</a>
+      <a href="#getting-started">External Components with micro:bit v2</a>
       <ul>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/LED%20and%20Buzzer">LED and Buzzer</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/OLED%20Screen">OLED Screen (ssd1306)</a></li>
@@ -35,6 +46,9 @@ Upload projects are tested on BBC micro:bit v2.
 - [x] LED/Buzzer
 - [x] Display String on LED Matrix
 - [x] Display Built-in/DIY Images
+- [x] Radio Messaging
+  - [x] Sender
+  - [x] Receiver
 - [ ] Soil Moisture Sensor
 - [ ] Linear Potentiometer
 - [ ] LDR Sensor
@@ -44,9 +58,7 @@ Upload projects are tested on BBC micro:bit v2.
 - [ ] DHT Sensor
 - [ ] Servo Motor
 - [ ] DC Motor
-- [ ] Radio Messaging
-  - [ ] Sender
-  - [ ] Receiver
+
 
 And more fun projects.
 
