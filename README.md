@@ -1,13 +1,11 @@
 # BBC micro:bit with MicroPython
 
-
 <picture>
   <img alt="micro:bit Logo" src="Docs\microbit-logo.png" width="20%" hight="20%" >
 </picture>
 <picture>
   <img alt="MicroPython Logo" src="Docs\micropython-logo.png" width="25%" hight="20%" >
 </picture>
-
 
 Projects, code examples and modules for BBC micro:bit with MicroPython.
 Upload projects are tested on BBC micro:bit v2.
@@ -34,6 +32,7 @@ Upload projects are tested on BBC micro:bit v2.
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/OLED%20Screen">OLED Screen (ssd1306)</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/PIR%20Sensor">PIR Sensor (Motion Detection)</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/Ultrasonic%20Sensor">Ultrasonic Sensor</a></li>
+        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/External%20Components%20with%20microbit/Servo%20Motor/servo-example.py">Servo Motor</a></li>
       </ul>
     </li>
   </ol>
@@ -41,6 +40,7 @@ Upload projects are tested on BBC micro:bit v2.
 
 ## Next Projects
 
+- [x] Servo Motor
 - [x] PIR Sensor
 - [x] OLED Screen
 - [x] LED/Buzzer
@@ -56,9 +56,7 @@ Upload projects are tested on BBC micro:bit v2.
 - [ ] Collision Sensor
 - [ ] Switch Sensor
 - [ ] DHT Sensor
-- [ ] Servo Motor
 - [ ] DC Motor
-
 
 And more fun projects.
 
