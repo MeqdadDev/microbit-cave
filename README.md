@@ -28,6 +28,7 @@ Upload projects are tested on BBC micro:bit v2.
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/6%20light-level.py">Light Sensor (built-in)</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/7%20random-activity1.py">Random Activity: Dice</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/8%20random-activity2.py">Random Activity: Challenges</a></li>
+        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/9%20data-logger.py">Data Logging</a></li>
       </ul>
     </li>
     <li>
@@ -45,6 +46,7 @@ Upload projects are tested on BBC micro:bit v2.
 
 ## Next Projects
 
+- [x] Data Logging
 - [x] Random Library Activities
 - [x] Light Sensor (built-in)
 - [x] Servo Motor
