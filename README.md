@@ -37,7 +37,7 @@ Upload projects are tested on BBC micro:bit v2.
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/OLED%20Screen">OLED Screen (ssd1306)</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/PIR%20Sensor">PIR Sensor (Motion Detection)</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/Ultrasonic%20Sensor">Ultrasonic Sensor</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/External%20Components%20with%20microbit/Servo%20Motor/servo-example.py">Servo Motor</a></li>
+        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/External%20Components%20with%20microbit/Servo%20Motor/">Servo Motor</a></li>
       </ul>
     </li>
   </ol>
