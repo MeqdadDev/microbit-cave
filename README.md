@@ -39,6 +39,7 @@ Upload projects are tested on BBC micro:bit v2.
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/PIR%20Sensor">PIR Sensor (Motion Detection)</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/Ultrasonic%20Sensor">Ultrasonic Sensor</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/External%20Components%20with%20microbit/Servo%20Motor/">Servo Motor</a></li>
+        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/External%20Components%20with%20microbit/DHT11%20Sensor/">DHT11 Sensor</a></li>
       </ul>
     </li>
   </ol>
@@ -46,6 +47,7 @@ Upload projects are tested on BBC micro:bit v2.
 
 ## Next Projects
 
+- [x] DHT11 Sensor
 - [x] Data Logging
 - [x] Random Library Activities
 - [x] Light Sensor (built-in)
@@ -64,7 +66,6 @@ Upload projects are tested on BBC micro:bit v2.
 - [ ] Touch Sensor
 - [ ] Collision Sensor
 - [ ] Switch Sensor
-- [ ] DHT Sensor
 - [ ] DC Motor
 
 And more fun projects.
