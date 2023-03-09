@@ -35,6 +35,7 @@ Upload projects are tested on BBC micro:bit v2.
         <li><a href="microbit/7 random-lib1.py">Random Activity: Dice</a></li>
         <li><a href="microbit/8 random-lib2.py">Random Activity: Challenges</a></li>
         <li><a href="microbit/9 data-logger.py">Data Logging</a></li>
+        <li><a href="microbit/10 microbit serial.py">micro:bit Serial Communication</a></li>
       </ul>
     </li>
     <li>
