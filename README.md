@@ -1,13 +1,19 @@
 # BBC micro:bit with MicroPython
 
+<p align="center">
 <picture>
   <img alt="micro:bit Logo" src="Docs\microbit-logo.png" width="20%" hight="20%" >
 </picture>
+</p>
+
 &nbsp;
 &nbsp;
+
+<p align="center">
 <picture>
   <img alt="MicroPython Logo" src="Docs\micropython-logo.png" width="25%" hight="20%" >
 </picture>
+</p>
 
 Projects, code examples and modules for BBC micro:bit with MicroPython.
 Upload projects are tested on BBC micro:bit v2.
@@ -15,12 +21,12 @@ Upload projects are tested on BBC micro:bit v2.
 ## Uploaded Projects
 
 <details>
-  <summary>Table of Contents</summary>
+  <summary open="True" >Table of Contents</summary>
   <ol>
     <li>
-      <a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/microbit%20with%20microPython">micro:bit v2 only</a>
+      <a href="microbit">micro:bit only</a>
       <ul>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/1%20display%20string.py">Display Text on LED Matrix</a></li>
+        <li><a href="microbit/1 display string.py">Display Text on LED Matrix</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/2%20display%20images.py">Display Built-in Images</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/3%20display%20DIY%20images.py">Display DIY Images</a></li>
         <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/4%20radio-sender.py">Radio Messaging: Sender</a></li>
