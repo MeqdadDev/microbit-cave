@@ -27,25 +27,25 @@ Upload projects are tested on BBC micro:bit v2.
       <a href="microbit">micro:bit only</a>
       <ul>
         <li><a href="microbit/1 display string.py">Display Text on LED Matrix</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/2%20display%20images.py">Display Built-in Images</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/3%20display%20DIY%20images.py">Display DIY Images</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/4%20radio-sender.py">Radio Messaging: Sender</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/5%20radio-receiver.py">Radio Messaging: Receiver</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/6%20light-level.py">Light Sensor (built-in)</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/7%20random-activity1.py">Random Activity: Dice</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/8%20random-activity2.py">Random Activity: Challenges</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/microbit%20with%20microPython/9%20data-logger.py">Data Logging</a></li>
+        <li><a href="microbit/2 display images.py">Display Built-in Images</a></li>
+        <li><a href="microbit/3 display DIY images.py">Display DIY Images</a></li>
+        <li><a href="microbit/4 radio-sender.py">Radio Messaging: Sender</a></li>
+        <li><a href="microbit/5 radio-receiver.py">Radio Messaging: Receiver</a></li>
+        <li><a href="microbit/6 light-level.py">Light Sensor (built-in)</a></li>
+        <li><a href="microbit/7 random-lib1.py">Random Activity: Dice</a></li>
+        <li><a href="microbit/8 random-lib2.py">Random Activity: Challenges</a></li>
+        <li><a href="microbit/9 data-logger.py">Data Logging</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">External Components with micro:bit v2</a>
+      <a href="microbit_tools">Tools with micro:bit</a>
       <ul>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/LED%20and%20Buzzer">LED and Buzzer</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/OLED%20Screen">OLED Screen (ssd1306)</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/PIR%20Sensor">PIR Sensor (Motion Detection)</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/tree/main/External%20Components%20with%20microbit/Ultrasonic%20Sensor">Ultrasonic Sensor</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/External%20Components%20with%20microbit/Servo%20Motor/">Servo Motor</a></li>
-        <li><a href="https://github.com/MeqdadDev/microbit-micropython-samples/blob/main/External%20Components%20with%20microbit/DHT11%20Sensor/">DHT11 Sensor</a></li>
+        <li><a href="microbit_tools/LED and Buzzer/">LED and Buzzer</a></li>
+        <li><a href="microbit_tools/OLED Screen/">OLED Screen (ssd1306)</a></li>
+        <li><a href="microbit_tools/PIR Sensor/">PIR Sensor (Motion Detection)</a></li>
+        <li><a href="microbit_tools/Ultrasonic Sensor/">Ultrasonic Sensor</a></li>
+        <li><a href="microbit_tools/Servo Motor/">Servo Motor</a></li>
+        <li><a href="microbit_tools/DHT11 Sensor/">DHT11 Sensor</a></li>
       </ul>
     </li>
   </ol>
@@ -53,6 +53,7 @@ Upload projects are tested on BBC micro:bit v2.
 
 ## Next Projects
 
+- [x] micro:bit Serial Communication
 - [x] DHT11 Sensor
 - [x] Data Logging
 - [x] Random Library Activities
