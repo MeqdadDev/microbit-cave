@@ -47,6 +47,7 @@ Upload projects are tested on BBC micro:bit v2.
         <li><a href="microbit_tools/Ultrasonic Sensor/">Ultrasonic Sensor</a></li>
         <li><a href="microbit_tools/Servo Motor/">Servo Motor</a></li>
         <li><a href="microbit_tools/DHT11 Sensor/">DHT11 Sensor</a></li>
+        <li><a href="microbit_tools/IR Receiver/">IR Receiver</a></li>
       </ul>
     </li>
   </ol>
