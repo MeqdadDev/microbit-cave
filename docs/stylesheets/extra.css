@@ -1,0 +1,251 @@
+:root {
+  --mc-indigo: #1d2350;
+  --mc-board: #2b3373;
+  --mc-coral: #ff5b45;
+  --mc-coral-dark: #e8473a;
+  --mc-red: #d63d2b;
+  --mc-gold: #f2c25a;
+}
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: var(--mc-indigo);
+  --md-primary-fg-color--light: var(--mc-board);
+  --md-primary-fg-color--dark: #11153a;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: var(--mc-coral);
+  --md-accent-fg-color--transparent: #ff5b451a;
+  --md-accent-bg-color: #ffffff;
+}
+
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: var(--mc-red);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 234;
+  --md-default-bg-color: #0f1230;
+  --md-code-bg-color: #161a3d;
+  --md-typeset-a-color: #ff8a6b;
+  --md-primary-fg-color: #141842;
+}
+
+.md-header__button.md-logo img,
+.md-nav__button.md-logo img {
+  height: 1.8rem;
+}
+
+/* Home hero */
+.mc-hero {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin: 1rem 0 2.4rem;
+}
+
+.mc-hero__logo {
+  width: 168px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 12px 28px #ff5b4540);
+}
+
+.md-typeset .mc-hero h1 {
+  margin: 0 0 .4rem;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  font-size: 2.6rem;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .mc-hero h1 span {
+  color: var(--md-accent-fg-color);
+}
+
+.mc-hero__tagline {
+  font-size: 1.05rem;
+  margin: 0 0 1.2rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .mc-hero .md-button {
+  margin: .2rem .4rem .2rem 0;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .mc-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .mc-hero__logo { width: 128px; }
+  .md-typeset .mc-hero h1 { font-size: 2rem; }
+}
+
+/* Cards */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  border-radius: .8rem;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid > .card:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 8px 24px #ff5b4526;
+  transform: translateY(-2px);
+}
+
+/* Example meta card */
+.mc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem 1.6rem;
+  padding: .8rem 1rem;
+  margin: -.4rem 0 1.6rem;
+  border-radius: .8rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  font-size: .7rem;
+}
+
+.mc-meta__item {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.mc-meta__item--wide {
+  flex-basis: 100%;
+}
+
+.mc-meta__label {
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 700;
+  font-size: .6rem;
+  color: var(--md-default-fg-color--light);
+  min-width: 4.2rem;
+}
+
+.mc-badge {
+  padding: .1rem .55rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--mc-board);
+}
+
+.mc-badge--beginner { background: #1f9d6a; }
+.mc-badge--intermediate { background: #e08a1e; }
+.mc-badge--advanced { background: var(--mc-red); }
+
+/* Buttons */
+.md-typeset .md-button--primary {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: #fff;
+}
+
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus {
+  background-color: var(--mc-coral-dark);
+  border-color: var(--mc-coral-dark);
+  color: #fff;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary) {
+  color: #ffd0c4;
+  border-color: #ffd0c480;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary):hover {
+  color: #fff;
+  border-color: var(--md-accent-fg-color);
+  background-color: var(--md-accent-fg-color--transparent);
+}
+
+.md-typeset .grid.mc-grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+}
+
+/* Section card grid */
+.md-typeset .mc-examples {
+  margin-top: 1.6rem;
+}
+
+.md-typeset .grid > .mc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .4rem;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .grid > .mc-card:hover {
+  color: var(--md-default-fg-color);
+}
+
+.mc-card__title {
+  font-weight: 700;
+  font-size: .85rem;
+}
+
+.mc-card__desc {
+  font-size: .7rem;
+  color: var(--md-default-fg-color--light);
+  flex-grow: 1;
+}
+
+.mc-card .mc-badge {
+  font-size: .6rem;
+}
+
+/* Generated wiring diagrams */
+.mc-wiring {
+  margin: 1.2rem 0 1.6rem;
+  padding: .6rem;
+  border-radius: .8rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  overflow-x: auto;
+}
+
+.mc-wiring svg {
+  display: block;
+  width: 100%;
+  min-width: 520px;
+  max-width: 640px;
+  height: auto;
+  margin: 0 auto;
+  font-family: var(--md-text-font-family);
+}
+
+.mc-wd-board { fill: var(--mc-board); }
+.mc-wd-board-label { fill: #fff; font-weight: 800; font-size: 15px; }
+.mc-wd-pad { fill: var(--mc-gold); }
+.mc-wd-pin { fill: #fff; font-size: 13px; font-weight: 700; text-anchor: end; font-family: var(--md-code-font-family); }
+.mc-wd-box { fill: var(--md-default-bg-color); stroke: var(--md-default-fg-color--lighter); stroke-width: 1.5; }
+.mc-wd-part { fill: var(--md-default-fg-color); font-size: 14px; font-weight: 700; }
+.mc-wd-label { fill: var(--md-default-fg-color); font-size: 13px; font-family: var(--md-code-font-family); }
+
+.mc-wire { fill: none; stroke-width: 3.5; stroke-linecap: round; }
+.mc-wire-end { stroke: none; }
+.mc-wire--gnd { stroke: #7a8096; fill: #7a8096; }
+.mc-wire--power { stroke: #e5484d; fill: #e5484d; }
+.mc-wire--s0 { stroke: #f5a524; fill: #f5a524; }
+.mc-wire--s1 { stroke: #12a594; fill: #12a594; }
+.mc-wire--s2 { stroke: #3e63dd; fill: #3e63dd; }
+.mc-wire--s3 { stroke: #d6409f; fill: #d6409f; }
+.mc-wire--s4 { stroke: #8e4ec6; fill: #8e4ec6; }
+path.mc-wire { fill: none; }
+.mc-wd-label--end { text-anchor: end; }
+.mc-wd-note { fill: var(--md-default-fg-color--light); font-size: 12px; paint-order: stroke; stroke: var(--md-code-bg-color); stroke-width: 5px; stroke-linejoin: round; }
+.mc-wd-note--center { text-anchor: middle; }
+.mc-wd-resistor { fill: none; stroke: var(--md-accent-fg-color); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.mc-wd-node { fill: var(--md-default-fg-color--light); }
+.mc-wd-label--center { text-anchor: middle; }
+.mc-wd-value { fill: var(--md-accent-fg-color); font-weight: 700; }
+.mc-wd-rail { fill: none; stroke: #7a8096; stroke-width: 5; stroke-linecap: round; }

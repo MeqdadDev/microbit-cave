@@ -1,0 +1,49 @@
+{% set m = page.meta %}
+{% if m.level or m.parts or m.source %}
+<div class="mc-meta">
+  {% if m.level %}
+  <div class="mc-meta__item">
+    <span class="mc-meta__label">Level</span>
+    {% with level = m.level %}{% include "partials/level-badge.html" %}{% endwith %}
+  </div>
+  {% endif %}
+  {% if m.board %}
+  <div class="mc-meta__item">
+    <span class="mc-meta__label">Board</span>
+    <span>{{ m.board }}</span>
+  </div>
+  {% endif %}
+  {% if m.runs_on %}
+  <div class="mc-meta__item">
+    <span class="mc-meta__label">Runs on</span>
+    <span>{{ m.runs_on }}</span>
+  </div>
+  {% endif %}
+  {% if m.parts %}
+  <div class="mc-meta__item mc-meta__item--wide">
+    <span class="mc-meta__label">Parts</span>
+    <span>{{ m.parts | join(" · ") }}</span>
+  </div>
+  {% endif %}
+  {% if m.source %}
+  <div class="mc-meta__item mc-meta__item--wide">
+    <span class="mc-meta__label">Source</span>
+    <span>
+      {% for file in m.source %}
+      <a href="{{ config.repo_url }}/blob/main/{{ file | urlencode }}">{{ file.split("/") | last }}</a>{% if not loop.last %} · {% endif %}
+      {% endfor %}
+    </span>
+  </div>
+  {% endif %}
+  {% if m.libraries %}
+  <div class="mc-meta__item mc-meta__item--wide">
+    <span class="mc-meta__label">Copy first</span>
+    <span>
+      {% for file in m.libraries %}<code>{{ file.split("/") | last }}</code>{% if not loop.last %} and {% endif %}{% endfor %}
+      onto your micro:bit before flashing the example —
+      <a href="{{ 'getting-started/#copying-helper-libraries' | url }}">how?</a>
+    </span>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
