@@ -1,0 +1,88 @@
+site_name: micro:bit cave
+site_description: Explore the world of micro:bit & MicroPython — tested projects, sensors and modules for the BBC micro:bit.
+site_author: Meqdad Darwish
+site_url: https://meqdaddev.github.io/microbit-cave/
+repo_url: https://github.com/MeqdadDev/microbit-cave
+repo_name: MeqdadDev/microbit-cave
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; Meqdad Darwish — MIT License
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/images/logo.svg
+  favicon: assets/images/logo.svg
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - content.action.edit
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+hooks:
+  - hooks/check_examples.py
+  - hooks/wiring.py
+
+plugins:
+  - search
+  - tags
+  - awesome-nav
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets:
+      base_path: [!relative $config_dir]
+      check_paths: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MeqdadDev

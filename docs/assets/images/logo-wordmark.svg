@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 256" role="img" aria-labelledby="title">
+  <title id="title">micro:bit cave</title>
+  <style>
+    .name { font: 800 96px "Segoe UI", "Helvetica Neue", Arial, sans-serif; fill: #1d2350; letter-spacing: -2px; }
+    .cave { fill: #ff5b45; }
+    .tag  { font: 600 26px "Segoe UI", "Helvetica Neue", Arial, sans-serif; fill: #5a6194; letter-spacing: .5px; }
+  </style>
+  <svg x="0" y="0" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b3373"/>
+      <stop offset="1" stop-color="#11153a"/>
+    </linearGradient>
+    <linearGradient id="led" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb35c"/>
+      <stop offset="0.45" stop-color="#ff6a45"/>
+      <stop offset="1" stop-color="#e8333f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="1" stop-color="#d9a031"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="eyeglow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <symbol id="on" viewBox="0 0 28 28">
+      <rect width="28" height="28" rx="7" fill="url(#led)"/>
+      <rect x="4" y="3" width="20" height="7" rx="3.5" fill="#fff" opacity=".28"/>
+    </symbol>
+  </defs>
+
+  <rect x="14" y="10" width="228" height="236" rx="44" fill="url(#board)"/>
+  <rect x="15.5" y="11.5" width="225" height="233" rx="42.5" fill="none" stroke="#5560b8" stroke-opacity=".45" stroke-width="3"/>
+
+  <!-- glow layer behind lit LEDs -->
+  <g filter="url(#glow)" fill="#ff5a3c" opacity=".75">
+    <rect x="78" y="26" width="100" height="28" rx="8"/>
+    <rect x="42" y="62" width="172" height="28" rx="8"/>
+    <rect x="42" y="98" width="64" height="28" rx="8"/>
+    <rect x="150" y="98" width="64" height="28" rx="8"/>
+    <rect x="42" y="134" width="28" height="64" rx="8"/>
+    <rect x="186" y="134" width="28" height="64" rx="8"/>
+  </g>
+
+  <!-- unlit LEDs: corners + dark cave interior -->
+  <g fill="#3a4392" opacity=".55">
+    <rect x="42" y="26" width="28" height="28" rx="7"/>
+    <rect x="186" y="26" width="28" height="28" rx="7"/>
+  </g>
+  <g fill="#0a0d26">
+    <rect x="114" y="98" width="28" height="28" rx="7"/>
+    <rect x="78" y="134" width="28" height="28" rx="7"/>
+    <rect x="114" y="134" width="28" height="28" rx="7"/>
+    <rect x="150" y="134" width="28" height="28" rx="7"/>
+    <rect x="78" y="170" width="28" height="28" rx="7"/>
+    <rect x="114" y="170" width="28" height="28" rx="7"/>
+    <rect x="150" y="170" width="28" height="28" rx="7"/>
+  </g>
+
+  <!-- lit LEDs forming the cave arch -->
+  <use href="#on" x="78" y="26" width="28" height="28"/>
+  <use href="#on" x="114" y="26" width="28" height="28"/>
+  <use href="#on" x="150" y="26" width="28" height="28"/>
+  <use href="#on" x="42" y="62" width="28" height="28"/>
+  <use href="#on" x="78" y="62" width="28" height="28"/>
+  <use href="#on" x="114" y="62" width="28" height="28"/>
+  <use href="#on" x="150" y="62" width="28" height="28"/>
+  <use href="#on" x="186" y="62" width="28" height="28"/>
+  <use href="#on" x="42" y="98" width="28" height="28"/>
+  <use href="#on" x="78" y="98" width="28" height="28"/>
+  <use href="#on" x="150" y="98" width="28" height="28"/>
+  <use href="#on" x="186" y="98" width="28" height="28"/>
+  <use href="#on" x="42" y="134" width="28" height="28"/>
+  <use href="#on" x="186" y="134" width="28" height="28"/>
+  <use href="#on" x="42" y="170" width="28" height="28"/>
+  <use href="#on" x="186" y="170" width="28" height="28"/>
+
+  <!-- eyes peeking from the cave -->
+  <g fill="#6ff7c8">
+    <ellipse cx="112" cy="152" rx="9" ry="10" filter="url(#eyeglow)" opacity=".9"/>
+    <ellipse cx="144" cy="152" rx="9" ry="10" filter="url(#eyeglow)" opacity=".9"/>
+    <ellipse cx="112" cy="152" rx="6.5" ry="7.5"/>
+    <ellipse cx="144" cy="152" rx="6.5" ry="7.5"/>
+  </g>
+  <circle cx="114.5" cy="149" r="2.2" fill="#fff"/>
+  <circle cx="146.5" cy="149" r="2.2" fill="#fff"/>
+
+  <!-- edge connector -->
+  <g fill="url(#gold)">
+    <rect x="49" y="212" width="26" height="20" rx="6"/>
+    <rect x="89" y="212" width="18" height="20" rx="5"/>
+    <rect x="119" y="212" width="18" height="20" rx="5"/>
+    <rect x="149" y="212" width="18" height="20" rx="5"/>
+    <rect x="181" y="212" width="26" height="20" rx="6"/>
+  </g>
+  <g fill="#11153a">
+    <circle cx="62" cy="222" r="5"/>
+    <circle cx="194" cy="222" r="5"/>
+  </g>
+</svg>
+  <text class="name" x="290" y="126">micro:bit <tspan class="cave">cave</tspan></text>
+  <text class="tag" x="294" y="178">Explore the world of micro:bit &amp; MicroPython</text>
+</svg>

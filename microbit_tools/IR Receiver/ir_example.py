@@ -1,15 +1,17 @@
+'''
+Example: Show the code of each IR remote button on the LED matrix
+By: Meqdad Darwish
+'''
+# Note: IR receiver OUT is connected to pin16.
+
 from microbit import *
 import ir
 
-# Initialize IR receiver on pin16
-ir_receiver = ir.MicrobitIRReceiver()
-
-def display_signal(signal):
-    display.scroll(str(signal))
+remote = ir.MicrobitIRReceiver(pin16)
 
 while True:
-    # Check if a signal has been received
-    if ir_receiver.get_signal():
-        # Display the received signal
-        display_signal(ir_receiver.get_signal())
-        
+    command = remote.get_signal()
+    if command is not None:
+        # wait=False keeps the loop polling the receiver while the number scrolls
+        display.scroll(str(command), wait=False)
+    sleep(2)  # the 9 ms start pulse is still caught, without running flat out

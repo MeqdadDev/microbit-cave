@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+
+{% block content %}
+  {{ super() }}
+  {% if page.parent %}
+  <div class="md-typeset">
+    <div class="grid mc-examples">
+      {% for child in page.parent.children if child.is_page and child.url != page.url %}
+      <a class="card mc-card" href="{{ child.url | url }}">
+        <span class="mc-card__title">{{ child.title }}</span>
+        {% if child.meta.description %}
+        <span class="mc-card__desc">{{ child.meta.description }}</span>
+        {% endif %}
+        {% if child.meta.level %}
+        {% with level = child.meta.level %}{% include "partials/level-badge.html" %}{% endwith %}
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+{% endblock %}
