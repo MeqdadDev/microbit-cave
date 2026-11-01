@@ -14,6 +14,7 @@ parts:
   - "Jumper wires"
 source:
   - "microbit_tools/OLED Screen/print-text-ssd1306-oled-example1.py"
+  - "microbit_tools/OLED Screen/print-text-ssd1306-oled-example2.py"
   - "microbit_tools/OLED Screen/ssd1306.py"
   - "microbit_tools/OLED Screen/ssd1306_text.py"
 libraries:
@@ -40,10 +41,18 @@ The OLED uses the micro:bit's default I²C pins, reachable through an **edge con
 
 ## Code
 
-=== "Example"
+=== "Example 1: Print text"
 
     ```python title="print-text-ssd1306-oled-example1.py" linenums="1"
     --8<-- "microbit_tools/OLED Screen/print-text-ssd1306-oled-example1.py"
+    ```
+
+=== "Example 2: Placement test"
+
+    Check where text lands: empty and off-screen text draw nothing, and long text stops at the edge of the screen.
+
+    ```python title="print-text-ssd1306-oled-example2.py" linenums="1"
+    --8<-- "microbit_tools/OLED Screen/print-text-ssd1306-oled-example2.py"
     ```
 
 === "ssd1306.py (library)"
